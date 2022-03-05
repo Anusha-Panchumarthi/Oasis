@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+html{
+    scroll-behavior: smooth;
+    
+}
+body{
+    background-color: #00012b;
+    height: 3000px;
+    color: whitesmoke;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.my-nav{
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+    height: 80px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    color: white;
+    font-family: "Montserrat";
+    position: fixed;
+    top:0;
+}
+
+.my-nav ul{
+    margin-right: 20px;
+    float: right;
+}
+
+.main-link{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.my-nav ul li{
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    padding-top: 10px;
+   
+}
+
+.my-nav ul li a{
+    color: white;
+    margin: 5px;
+    
+}
+
+.main-link{
+    color: #9F7AEA;
+}
+
+.jumbotron{
+   margin-top: 80px;
+   background: #98B9F2;
+   background-image: url('./hero-bg1.jpg');
+   height: 100vh;
+   background-size: cover;
+   background-position: center;
+   border-radius: 0%;
+   color: whitesmoke;
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    background-attachment: fixed;
+}
+
+#learn{
+    width: fit-content;
+    margin: 50px;
+}
+
+.display-4{
+    text-align: center;
+}
+
+#checkbox_toggle{
+    display: none;
+}
+
+.hamburger{
+    display: none;
+    user-select: none;
+    font-size: 24px;
+}
+
+@media (max-width: 750px){
+    .menu{
+        display: none;
+        background-color: black;
+        position: absolute;
+        right: 0;
+        left: 0;
+        padding: 10px;
+    }
+    .hamburger{
+        display: inline-block;
+    }
+
+    #checkbox_toggle:checked~ .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+
+
+#msg h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+  h1{
+      color: whitesmoke;
+  }
