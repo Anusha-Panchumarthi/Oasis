@@ -55,7 +55,7 @@ body{
 .jumbotron{
    margin-top: 80px;
    background: #98B9F2;
-   background-image: url('./hero-bg1.jpg');
+   background-image: url('./images/hero-bg1.jpg');
    height: 100vh;
    background-size: cover;
    background-position: center;
@@ -152,7 +152,7 @@ body{
 
 #third{
     height: 900px;
-    background-image: url('./bitcoin-edit.jpg');
+    background-image: url('./images/bitcoin-edit.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
