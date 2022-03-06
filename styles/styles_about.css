@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-neutral-900: hsl(207, 19%, 9%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-accent-400: #D53F8C;
+}
+
+body{
+    background-color: #00012b;
+    font-family: "Montserrat";
+    color: whitesmoke;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.my-nav{
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+    height: 80px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    color: white;
+    font-family: "Montserrat";
+    position: fixed;
+    top:0;
+}
+
+.my-nav ul{
+    margin-right: 20px;
+    float: right;
+}
+
+.main-link{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.my-nav ul li{
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    padding-top: 10px;
+   
+}
+
+.my-nav ul li a{
+    color: white;
+    margin: 5px;
+    
+}
+
+#checkbox_toggle{
+    display: none;
+}
+
+.hamburger{
+    display: none;
+    user-select: none;
+    font-size: 24px;
+}
+.hamburger:hover{
+    transform: rotate(90deg) ;
+    transition: 0.5s;
+}
+@media (max-width: 750px){
+    .menu{
+        display: none;
+        background-color: black;
+        position: absolute;
+        right: 0;
+        left: 0;
+        padding: 10px;
+    }
+    .hamburger{
+        display: inline-block;
+        transition: 0.5s;
+    }
+
+    #checkbox_toggle:checked~ .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+}

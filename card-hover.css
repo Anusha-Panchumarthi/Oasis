@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 :root {
   --clr-neutral-900: hsl(207, 19%, 9%);
   --clr-neutral-100: hsl(0, 0%, 100%);
-  --clr-accent-400: hsl(142, 90%, 61%);
+  --clr-accent-400: #D53F8C;
 }
 
 *,
@@ -16,12 +18,12 @@ body {
   place-items: center;
   line-height: 1.6;
   background: var(--clr-neutral-900);
-  font-family: sans-serif;
+  font-family: 'Montserrat';
 }
 
 .card {
   color: var(--clr-neutral-100);
-  background-image: url("images/metaverse.webp");
+  background-image: linear-gradient(45deg, #90CDF4, #ED64A6);
   background-size: cover;
   padding: 10rem 0 0;
   max-width: 35ch;
@@ -31,7 +33,7 @@ body {
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1);
 }
 
 .card-content {
@@ -86,17 +88,20 @@ body {
   color: rgb(255 255 255 / 0.85);
 }
 
-.button {
+.c-btn {
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
   color: var(--clr-neutral-900);
   background-color: var(--clr-accent-400);
+  background:none;
+  color: #D53F8C;
+  border: 2px solid #D53F8C;
   padding: 0.5em 1.25em;
   border-radius: 0.25em;
 }
 
-.button:hover,
-.button:focus {
+.c-btn:hover,
+.c-btn:focus {
   background-color: var(--clr-neutral-100);
 }
