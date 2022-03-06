@@ -120,11 +120,13 @@ body{
 #second{
     display: flex;
     flex-direction: row;
-    
 }
 
-.my-card, my-card2{
+.my-card{
     background:none;
+}
+
+.my-card, .my-card2{
     height: 500px;
     width: 600px;
     border-radius: 12px;
@@ -134,7 +136,10 @@ body{
     box-shadow: 12px 12px 0 rgba(245, 245, 245, 0.87);
 }
 
-.my-card p{
+.my-card2{
+    margin-top: 0;
+}
+.my-card p, .my-card2 p{
     font-size: larger;
     margin: 10px;
 }
@@ -156,8 +161,15 @@ body{
     background-size: cover;
     background-position: center;
     display: flex;
+    flex-direction: row;
     background-attachment: fixed;
     padding: 80px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#third img{
+    margin: 20px;
 }
 
 #nav-third{
@@ -166,6 +178,43 @@ body{
     padding-right: 50px;
    padding-left: 50px;
 }
+
+.my-card2{
+    background: #00012b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.my-card2 a{
+    width: 250px;
+   
+}
+
+#fourth{
+    height: auto;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+    top:0
+}
+
+#fourth .my-card{
+   
+}
+.footer{
+    height: 300px;
+    background-color: black;
+    box-shadow: 0 -3px 10px #0BC5EA;
+    color: #718096;
+    padding: 70px;
+    margin-top: 150px;
+}
+
 
 
 ::-webkit-scrollbar {
