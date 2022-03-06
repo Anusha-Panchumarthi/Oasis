@@ -14,6 +14,7 @@ body{
     background-color: #00012b;
     font-family: "Montserrat";
     color: whitesmoke;
+    
 }
 
 *{
@@ -94,6 +95,28 @@ body{
     }
 }
 
+.jumbotron{
+  margin-top: 80px;
+  background: #98B9F2;
+  background-image: url("../images/headset1.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0%;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 0;
+   background-attachment: fixed;
+}
+.display-4{
+  text-align: center;
+  font-weight: 600;
+}
+
+
 /*card + animation*/
 
 .card {
@@ -102,6 +125,7 @@ body{
     background-size: cover;
     padding: 10rem 0 0;
     max-width: 35ch;
+    max-height: 370px;
     border-radius: 0.5rem;
     overflow: hidden;
     transition: transform 500ms ease;
@@ -184,4 +208,27 @@ body{
 #card-1{
     
     margin-top: 100px;
+}
+
+#info-section{
+  height: 900px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+background: black; 
+}
+::-webkit-scrollbar-thumb {
+background: #2D3748; 
+border-radius: 12px;
+}
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
 }
