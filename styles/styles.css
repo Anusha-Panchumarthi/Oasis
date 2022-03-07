@@ -194,15 +194,19 @@ body{
 
 #fourth{
     height: auto;
-    
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 100px;
-    top:0
+    top:0;
+    padding: 30px;
 }
 
+#fourth a{
+   margin-top: 45px;
+   margin-left: 45px;
+}
 .footer{
     height: 300px;
     background-color: black;

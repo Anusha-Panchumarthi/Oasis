@@ -14,6 +14,7 @@ body{
     
     font-family: "Montserrat";
     color: whitesmoke;
+    background-color: #00012b;
 }
 
 *{
@@ -97,7 +98,7 @@ body{
 .jumbotron{
     margin-top: 80px;
     background: #98B9F2;
-    background-image: url("../images/vr.avif");
+    background-image: url("../images/vr.jpg");
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -116,14 +117,12 @@ body{
     font-weight: 600;
   }
 
-  
-
 .my-card{
    margin-top: 80px;
+   margin: 40px;
    height: auto;
     width: 600px;
     border-radius: 12px;
-    
     padding: 20px;
     border: solid 1.5px whitesmoke;
     box-shadow: 12px 12px 0 rgba(245, 245, 245, 0.87);
@@ -133,6 +132,14 @@ body{
 .my-card p{
     font-size: larger;
     margin: 10px;
+}
+
+#main-div{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+
 }
 
 ::-webkit-scrollbar {
